@@ -86,7 +86,7 @@ export default function ScrollableDrawerLeft() {
             sx={{
               color: "#65717C",
               fontWeight: "light",
-              border: "1px solid red",
+              // border: "1px solid red",
               fontSize: "1rem",
               "&:hover": {
                 background: "black",
@@ -98,250 +98,166 @@ export default function ScrollableDrawerLeft() {
           >
             Welcome
           </ListItemButton>
-          {/* <Collapse in={!customerOpen} timeout="auto" unmountOnExit>
-            <List sx={{ color: "white" }}>
-              <Link href="/singleEntryPage">
-                <ListItemButton sx={{ color: "white" }}>
-                  <ListItemIcon sx={{ color: "#fff" }}>
-                    <BsDot size={30} />
-                  </ListItemIcon>
-                  <ListItemText primary="Entry Posting" />
-                </ListItemButton>
-              </Link>
-              <Link href="/masterList">
-                <ListItemButton sx={{ color: "white" }}>
-                  <ListItemIcon sx={{ color: "#fff" }}>
-                    {" "}
-                    <BsDot size={30} />
-                  </ListItemIcon>
-                  <ListItemText primary="Master List" />
-                </ListItemButton>
-              </Link>
-            </List>
-          </Collapse> */}
-        </List>
-
-        <List>
           <ListItemButton
             sx={{
-              color: "white",
-              // fontSize: "1rem",
+              color: "#65717C",
               fontWeight: "light",
-              fontSize: "15px",
-              "&:hover": {
-                background: "#FF8102",
-                color: "#fff",
-                borderRadius: "20px",
-                fontWeight: "light",
-              },
-            }}
-            onClick={handleAchOutwardOpen}
-          >
-            ACH Outward
-            {achOutwardOpen ? (
-              <Typography
-                sx={{
-                  marginLeft: "66px",
-                  fontWeight: "light",
-                  marginTop: "5px",
-                }}
-              >
-                <MdChevronRight size={25} />
-              </Typography>
-            ) : (
-              <Typography
-                sx={{
-                  marginLeft: "66px",
-                  fontWeight: "light",
-                  marginTop: "5px",
-                }}
-              >
-                <ExpandMore size={25} />
-              </Typography>
-            )}
-          </ListItemButton>
-          <Collapse in={!achOutwardOpen} timeout="auto" unmountOnExit>
-            <List sx={{ color: "white" }}>
-              <Link href="/masterList">
-                <ListItemButton sx={{ color: "white" }}>
-                  <ListItemIcon sx={{ color: "#fff" }}>
-                    {" "}
-                    <BsDot size={30} />
-                  </ListItemIcon>
-                  <ListItemText primary="ACH Outward Master List" />
-                </ListItemButton>
-              </Link>
-              <Link href="/singleAchEntries">
-                <ListItemButton sx={{ color: "white" }}>
-                  <ListItemIcon sx={{ color: "#fff" }}>
-                    {" "}
-                    <BsDot size={30} />
-                  </ListItemIcon>
-                  <ListItemText primary="Single ACH Entries" />
-                </ListItemButton>
-              </Link>
-              <Link href="/outwardMultipleUpload">
-                <ListItemButton sx={{ color: "white" }}>
-                  <ListItemIcon sx={{ color: "#fff" }}>
-                    {" "}
-                    <BsDot size={30} />
-                  </ListItemIcon>
-                  <ListItemText primary="Outward Multiple Upload" />
-                </ListItemButton>
-              </Link>
-            </List>
-          </Collapse>
-        </List>
-
-        <List>
-          <ListItemButton
-            sx={{
-              color: "white",
+              // border: "1px solid red",
               fontSize: "1rem",
-              fontWeight: "light",
-              fontSize: "15px",
               "&:hover": {
-                background: "#FF8102",
-                color: "#fff",
+                background: "black",
+                color: "#FAF9FB",
                 borderRadius: "20px",
               },
             }}
-            onClick={handleAchInwardOpen}
+            onClick={handleCustomerOpen}
           >
-            ACH Inward
-            {achInwardOpen ? (
-              <Typography
-                sx={{
-                  marginLeft: "76px",
-                  fontWeight: "light",
-                  marginTop: "5px",
-                }}
-              >
-                <MdChevronRight size={25} />
-              </Typography>
-            ) : (
-              <Typography
-                sx={{
-                  marginLeft: "66px",
-                  fontWeight: "light",
-                  marginTop: "5px",
-                }}
-              >
-                <ExpandMore size={25} />
-              </Typography>
-            )}
+            Compliance
           </ListItemButton>
-          <Collapse in={!achInwardOpen} timeout="auto" unmountOnExit>
-            <List sx={{ color: "white" }}>
-              <Link href="/inwardMasterList">
-                <ListItemButton sx={{ color: "white" }}>
-                  <ListItemIcon sx={{ color: "#fff" }}>
-                    {" "}
-                    <BsDot size={30} />
-                  </ListItemIcon>
-                  <ListItemText primary="ACH Inward Master List" />
-                </ListItemButton>
-              </Link>
-              <ListItemButton sx={{ color: "white" }}>
-                <ListItemIcon sx={{ color: "#fff" }}>
-                  {" "}
-                  <BsDot size={30} />
-                </ListItemIcon>
-                <ListItemText primary="Single ACH Entries" />
-              </ListItemButton>
-              <ListItemButton sx={{ color: "white" }}>
-                <ListItemIcon sx={{ color: "#fff" }}>
-                  {" "}
-                  <BsDot size={30} />
-                </ListItemIcon>
-                <ListItemText primary="Inward Multiple Upload" />
-              </ListItemButton>
-            </List>
-          </Collapse>
-        </List>
-
-        <List>
           <ListItemButton
             sx={{
-              color: "white",
-              fontSize: "1rem",
+              color: "#65717C",
               fontWeight: "light",
-              fontSize: "15px",
+              // border: "1px solid red",
+              fontSize: "1rem",
               "&:hover": {
-                background: "#FF8102",
-                color: "#fff",
+                background: "black",
+                color: "#FAF9FB",
                 borderRadius: "20px",
               },
             }}
-            onClick={handleManagementOpen}
+            onClick={handleCustomerOpen}
           >
-            Management
-            {managementOpen ? (
-              <Typography
-                sx={{
-                  marginLeft: "66px",
-                  fontWeight: "light",
-                  marginTop: "5px",
-                }}
-              >
-                <MdChevronRight size={25} />
-              </Typography>
-            ) : (
-              <Typography
-                sx={{
-                  marginLeft: "66px",
-                  fontWeight: "light",
-                  marginTop: "5px",
-                }}
-              >
-                <ExpandMore size={25} />
-              </Typography>
-            )}
+            Overview
           </ListItemButton>
-          <Collapse in={!managementOpen} timeout="auto" unmountOnExit>
-            <List sx={{ color: "white" }}>
-              <ListItemButton sx={{ color: "white" }}>
-                <ListItemIcon sx={{ color: "#fff" }}>
-                  {" "}
-                  <BsDot size={30} />
-                </ListItemIcon>
-                <ListItemText primary="Reports" />
-              </ListItemButton>
-              <ListItemButton sx={{ color: "white" }}>
-                <ListItemIcon sx={{ color: "#fff" }}>
-                  {" "}
-                  <BsDot size={30} />
-                </ListItemIcon>
-                <ListItemText primary="User Management" />
-              </ListItemButton>
-              <ListItemButton sx={{ color: "white" }}>
-                <ListItemIcon sx={{ color: "#fff" }}>
-                  {" "}
-                  <BsDot size={30} />
-                </ListItemIcon>
-                <ListItemText primary="User Creation" />
-              </ListItemButton>
-            </List>
-          </Collapse>
-        </List>
-
-        <ListItemButton
-          sx={{
-            color: "#fff",
-            fontSize: "1rem",
-            fontWeight: "light",
-            fontSize: "15px",
-          }}
-        >
-          Authorization
-        </ListItemButton>
-
-        <List>
-          <ListItem sx={{ color: "#FFFFFF" }} disablePadding>
-            <ListItemButton>
-              <ListItemText />
-            </ListItemButton>
-          </ListItem>
+          <ListItemButton
+            sx={{
+              color: "#65717C",
+              fontWeight: "bold",
+              // border: "1px solid red",
+              fontSize: "1rem",
+              "&:hover": {
+                background: "black",
+                color: "#FAF9FB",
+                borderRadius: "20px",
+              },
+            }}
+            onClick={handleCustomerOpen}
+          >
+            BUSINESS
+          </ListItemButton>
+          <ListItemButton
+            sx={{
+              color: "#65717C",
+              fontWeight: "light",
+              // border: "1px solid red",
+              fontSize: "1rem",
+              "&:hover": {
+                background: "black",
+                color: "#FAF9FB",
+                borderRadius: "20px",
+              },
+            }}
+            onClick={handleCustomerOpen}
+          >
+            Products
+          </ListItemButton>
+          <ListItemButton
+            sx={{
+              color: "#65717C",
+              fontWeight: "light",
+              // border: "1px solid red",
+              fontSize: "1rem",
+              "&:hover": {
+                background: "black",
+                color: "#FAF9FB",
+                borderRadius: "20px",
+              },
+            }}
+            onClick={handleCustomerOpen}
+          >
+            Customers
+          </ListItemButton>
+          <ListItemButton
+            sx={{
+              color: "#65717C",
+              fontWeight: "light",
+              // border: "1px solid red",
+              fontSize: "1rem",
+              "&:hover": {
+                background: "black",
+                color: "#FAF9FB",
+                borderRadius: "20px",
+              },
+            }}
+            onClick={handleCustomerOpen}
+          >
+            Orders
+          </ListItemButton>
+          <ListItemButton
+            sx={{
+              color: "#65717C",
+              fontWeight: "bold",
+              // border: "1px solid red",
+              fontSize: "1rem",
+              "&:hover": {
+                background: "black",
+                color: "#FAF9FB",
+                borderRadius: "20px",
+              },
+            }}
+            onClick={handleCustomerOpen}
+          >
+            PAYMENTs
+          </ListItemButton>
+          <ListItemButton
+            sx={{
+              color: "#65717C",
+              fontWeight: "light",
+              // border: "1px solid red",
+              fontSize: "1rem",
+              "&:hover": {
+                background: "black",
+                color: "#FAF9FB",
+                borderRadius: "20px",
+              },
+            }}
+            onClick={handleCustomerOpen}
+          >
+            Wallets
+          </ListItemButton>
+          <ListItemButton
+            sx={{
+              color: "#65717C",
+              fontWeight: "light",
+              // border: "1px solid red",
+              fontSize: "1rem",
+              "&:hover": {
+                background: "black",
+                color: "#FAF9FB",
+                borderRadius: "20px",
+              },
+            }}
+            onClick={handleCustomerOpen}
+          >
+            Transactions
+          </ListItemButton>
+          <ListItemButton
+            sx={{
+              color: "#65717C",
+              fontWeight: "light",
+              // border: "1px solid red",
+              fontSize: "1rem",
+              "&:hover": {
+                background: "black",
+                color: "#FAF9FB",
+                borderRadius: "20px",
+              },
+            }}
+            onClick={handleCustomerOpen}
+          >
+            Virtual Account
+          </ListItemButton>
         </List>
         {/* <Divider /> */}
       </Drawer>

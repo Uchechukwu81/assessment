@@ -26,11 +26,11 @@ const Navbar = ({ swipeable }) => {
         position="scrollable"
         sx={{
           zIndex: (theme) => theme.zIndex.drawer - 1,
-          bgcolor: "#0846AF",
+          bgcolor: "#FFFFFF",
           borderRadius: 1,
-          marginTop: "50px",
+          marginTop: "80px",
           marginBottom: "15px",
-          height: "50px",
+          height: "80px",
         }}
       >
         {/* <Toolbar

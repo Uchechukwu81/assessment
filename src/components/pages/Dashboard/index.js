@@ -61,7 +61,7 @@ const Dashboard = () => {
       <Box>
         <Grid container spacing={1}>
        
-          <Grid xs={12} sm={12} md={12} sx={{ textAlign: "center" }}>
+          <Grid xs={12} sm={12} md={12} sx={{ textAlign: "center", border: "1px solid red" }}>
             <Button
               variant="contained"
               sx={{
