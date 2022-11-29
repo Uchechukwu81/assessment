@@ -27,16 +27,7 @@ const Dashboard = () => {
       accountNumber: "0937645728",
       totalInflow: "Uche",
     },
-    {
-      bankName: "GTB",
-      accountNumber: "0937645728",
-      totalInflow: "Uche",
-    },
-    {
-      bankName: "GTB",
-      accountNumber: "0937645728",
-      totalInflow: "Uche",
-    },
+   
   ];
   const columns = [
     {

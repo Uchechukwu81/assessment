@@ -28,7 +28,7 @@ const Logo = styled("img")({
   // height: '37px'
 });
 
-const drawerWidth = 280;
+const drawerWidth = 200;
 
 export default function ScrollableDrawerLeft() {
   const [customerOpen, setCustomerOpen] = useState(true);
@@ -69,9 +69,9 @@ export default function ScrollableDrawerLeft() {
             boxSizing: "border-box",
             borderTopRightRadius: 30,
             borderBottomRightRadius: 30,
-            bgcolor: "#01175C",
+            bgcolor: "#FFFFFF",
             padding: "0rem 2rem",
-            color: "#FAF9FB",
+            color: " #65717C",
           },
         }}
         variant="permanent"
@@ -81,28 +81,24 @@ export default function ScrollableDrawerLeft() {
 
         <Toolbar />
         {/* <Divider /> */}
-        <List sx={{ color: "#FAF9FB" }}>
+        <List sx={{ color: "#65717C" }}>
           <ListItemButton
             sx={{
-              color: "white",
+              color: "#65717C",
               fontWeight: "light",
+              border: "1px solid red",
               fontSize: "1rem",
               "&:hover": {
-                background: "#FF8102",
+                background: "black",
                 color: "#FAF9FB",
                 borderRadius: "20px",
               },
             }}
             onClick={handleCustomerOpen}
           >
-            Customer Funds Transfer
-            {customerOpen ? (
-              <MdChevronRight size={28} />
-            ) : (
-              <ExpandMore size={28} />
-            )}
+            Welcome
           </ListItemButton>
-          <Collapse in={!customerOpen} timeout="auto" unmountOnExit>
+          {/* <Collapse in={!customerOpen} timeout="auto" unmountOnExit>
             <List sx={{ color: "white" }}>
               <Link href="/singleEntryPage">
                 <ListItemButton sx={{ color: "white" }}>
@@ -122,7 +118,7 @@ export default function ScrollableDrawerLeft() {
                 </ListItemButton>
               </Link>
             </List>
-          </Collapse>
+          </Collapse> */}
         </List>
 
         <List>
